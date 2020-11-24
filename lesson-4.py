@@ -142,10 +142,8 @@ def task7():
     :return:
     """
     n = int(input("Введите число, факториал, которого необходимо получить: "))
-    f = 1
     for el in fact(n):
-        f *= el
-        print(f)
+        print(el)
 
 
 def fact(n):
@@ -155,8 +153,10 @@ def fact(n):
     :param n: целое число
     :return:
     """
+    f = 1
     for el in range(1, n + 1):
-        yield el
+        f *= el
+        yield f
 
 
 if __name__ == "__main__":
