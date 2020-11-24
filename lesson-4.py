@@ -145,8 +145,7 @@ def task7():
     f = 1
     for el in fact(n):
         f *= el
-
-    print(f)
+        print(f)
 
 
 def fact(n):
